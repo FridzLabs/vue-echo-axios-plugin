@@ -1,0 +1,27 @@
+{
+  "name": "@FridzLabs/vue-echo-axios-plugin",
+  "version": "0.0.1",
+  "description": "Vue 3 plugin for easy echo and axios integration",
+  "main": "index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "author": "FridzLabs",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0",
+    "laravel-echo": "^1.10.0",
+    "pusher-js": "^7.0.3",
+    "axios": "^0.21.1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist", // Specify the output directory for compiled JavaScript files
+      "module": "CommonJS", // Target module system (Node.js uses CommonJS)
+      "target": "ES2018", // Set the JavaScript version to compile down to
+      "declaration": true, // Generate corresponding '.d.ts' file
+      "declarationMap": true, // Generate source maps for '.d.ts' files
+      "sourceMap": true, // Generate source map files for debugging
+      "rootDir": "./src", // Specify the root directory of input files
+      "strict": true // Enable all strict type-checking options
+      // Add other compiler options as needed
+    },
+    "include": ["src/**/*"], // Specify which files to compile
+    "exclude": ["node_modules", "dist"] // Exclude directories from compilation
+  }
